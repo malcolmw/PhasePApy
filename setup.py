@@ -9,8 +9,12 @@ def configure():
             'author_email': 'c.chen@ou.edu',
             'description': 'A robust pure python package for automatic '\
                     'identification of seismic phases',
-            'packages': ['phasepapy']
-            }
+            'packages': [
+		'phasepapy',
+		"phasepapy.phasepicker",
+		"phasepapy.associator"
+	    ]
+    }
     return(kwargs)
 
 if __name__ == '__main__':
